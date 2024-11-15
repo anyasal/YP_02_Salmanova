@@ -1,0 +1,19 @@
+﻿<Window x:Class="YP_02_Salmanova.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YP_02_Salmanova"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="PartnersDataGrid" AutoGenerateColumns="False" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="100" />
+                <DataGridTextColumn Header="Тип" Binding="{Binding Type}" Width="100"/>
+                <DataGridTextColumn Header="Рейтинг" Binding="{Binding Rating}" Width="100"/>
+                <DataGridTextColumn Header="Скидка" Binding="{Binding Discount, StringFormat=P}" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
